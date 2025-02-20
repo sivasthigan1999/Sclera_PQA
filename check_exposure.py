@@ -26,7 +26,7 @@ def analyze_sclera_exposure(gray_sclera, sclera_region, sclera_mask,plot_results
     mean_brightness = np.mean(sclera_pixels)
 
     # Classify Exposure Level
-    if mean_brightness > 200:
+    if mean_brightness > 170:
         exposure_status = "Overexposed (Too Bright)"
     elif mean_brightness < 80:
         exposure_status = "Underexposed (Too Dark)"
